@@ -1,4 +1,11 @@
 print("This program calculates the distance a suspended object falls","given a gravity and time")
 import math
-gravity=1
-print(gravity)
+gravity=input("please input gravity")
+gravity=int(gravity)
+fps=input("what is your fps")
+fps=int(fps)
+frames=input("what is your frames")
+frames=int(frames)
+time=frames/fps
+distance=0.5*gravity*time**2
+print("It will drop", distance, "pixels in", time, "seconds")
